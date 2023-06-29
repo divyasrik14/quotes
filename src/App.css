@@ -1,6 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Cutive+Mono&family=Noto+Serif,wght@1,300&family=Open+Sans:wght@300&family=Ysabeau+SC:wght@1;100&display=swap"); */
 
-@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Cutive+Mono&family=Noto+Serif:wght@300&family=Open+Sans:wght@300&family=Ysabeau+SC:wght@1;100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Cutive+Mono&family=Noto+Serif:wght@300&family=Open+Sans:wght@300&family=Ysabeau+SC:wght@1;100&display=swap");
 
 * {
   margin: 0;
@@ -24,12 +24,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .content-box {
   padding: 3em 5em;
   background-color: white;
-  margin-top: 20em;
+  /* margin-top: 20em; */
   border-radius: 7px;
   box-shadow: 2px 2px 10px 5px rgb(247, 239, 239);
   max-width: 50em;
@@ -76,7 +77,7 @@ button {
   width: 140px;
   height: 35px;
   border-radius: 7px;
-  box-shadow: 2px 2px 10px #bbb2cf ;
+  box-shadow: 2px 2px 10px #bbb2cf;
   letter-spacing: 2px;
   cursor: pointer;
   font-weight: 200;
@@ -84,4 +85,15 @@ button {
 
 button:hover {
   background-color: #c0b4d999;
+}
+
+@media screen and (max-width: 700px) {
+  .content-box {
+    padding: 2em 5em;
+  }
+
+  .quote-content {
+    line-height: 1.2em;
+    padding: 1.2em 0;
+  }
 }
